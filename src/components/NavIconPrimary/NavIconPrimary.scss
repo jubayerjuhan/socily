@@ -1,0 +1,11 @@
+.navIcon-primary {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  svg {
+    height: 30px;
+    width: 30px;
+    color: var(--theme-color);
+  }
+}

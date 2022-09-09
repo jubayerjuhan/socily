@@ -1,0 +1,26 @@
+.navIconRound {
+  cursor: pointer;
+  background-color: #eee;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+  svg {
+    color: #b8bfc6;
+    font-size: 25px;
+  }
+}
+
+.navIcon-dark {
+  background-color: var(--dark-700);
+}
+
+.navIcon-selected {
+  background-color: #d2e3ff;
+  svg {
+    color: #1e74fd;
+  }
+}
