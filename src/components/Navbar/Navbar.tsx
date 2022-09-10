@@ -74,6 +74,7 @@ const Navbar = () => {
         </div>
         <MobileBottomNav />
         <Sidebar
+          closeAble={true}
           className={sidebar ? `sidebarMobile-active` : "sidebarMobile"}
           setSidebar={setSidebar}
           active={sidebar}
