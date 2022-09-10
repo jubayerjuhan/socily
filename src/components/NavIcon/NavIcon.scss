@@ -24,3 +24,15 @@
     color: #1e74fd;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .navIconRound {
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+
+    svg {
+      font-size: 18px;
+    }
+  }
+}

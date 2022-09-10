@@ -15,6 +15,12 @@ code {
 :root {
   --font-family: "Montserrat", sans-serif;
   --dark-700: #1a2236;
+  --dark-500: #293145;
   ---light-gray: #eee;
+  --text-gray: #adb5bd;
+  --text-semiWhite: #ddd;
+  --main-bg: #f2f2f3;
   --theme-color: #05f;
+  --theme-color-shade: #09f;
+  --theme-color-tint: #1e74fd;
 }

@@ -1,0 +1,26 @@
+.mobile__bottom-nav {
+  background: rgb(0, 85, 255);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 85, 255, 1) 41%,
+    rgba(0, 153, 255, 1) 100%
+  );
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  padding: 20px;
+  svg {
+    color: white;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mobile__bottom-nav {
+    display: flex;
+  }
+}

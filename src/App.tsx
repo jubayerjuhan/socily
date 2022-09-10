@@ -7,7 +7,7 @@ import Homepage from "./pages/Homepage/Homepage";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch({ type: "LOGIN", payload: { name: "Juhan" } });
+    // dispatch({ type: "SET_THEME", payload: "dark" });
   }, [dispatch]);
 
   return <Homepage />;

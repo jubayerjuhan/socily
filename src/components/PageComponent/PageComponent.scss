@@ -1,0 +1,35 @@
+.pageComponent {
+  padding-top: 96px;
+  height: calc(100vh);
+  width: 100vw;
+  background-color: var(--main-bg);
+}
+
+.pageComponent__wrapper {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+
+.pageComponent__content {
+  height: calc(100vh - 96px);
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .pageComponent__wrapper {
+    grid-template-columns: 230px 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .pageComponent__wrapper {
+    display: block;
+    .sidebar {
+      display: none;
+    }
+  }
+}

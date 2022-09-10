@@ -1,4 +1,7 @@
 .navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
   background-color: white;
   height: 96px;
   gap: 20px;
@@ -6,6 +9,10 @@
   padding: 0px 20px;
   display: grid;
   grid-template-columns: 1fr 1.2fr 1.6fr;
+}
+
+.navbar-dark {
+  background-color: var(--dark-500);
 }
 
 .navbar__logo {
@@ -30,13 +37,76 @@
   justify-content: space-between;
 }
 
+.navbar__tablet-icons {
+  display: none;
+}
+
+.navbar {
+  .sidebarMobile {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 280px;
+    height: 100vh;
+    right: -500px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .sidebarMobile-active {
+    @extend .sidebarMobile;
+    right: 0px;
+  }
+}
+
 @media (max-width: 1200px) {
-  .navIconRound {
-    display: none !important;
+  .navbar__icons {
+    .navIconRound {
+      display: none !important;
+    }
   }
 
   .navbar__icons {
     justify-content: flex-end;
     gap: 30px;
+  }
+}
+
+// tablet media query
+@media (max-width: 900px) {
+  .navbar__icons {
+    display: none;
+  }
+
+  .navbar__tablet-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .searchBar {
+    display: none !important;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar__logo {
+    .logo__image {
+      width: 140px;
+      height: 40px;
+    }
+  }
+}
+
+// mobile
+@media (max-width: 600px) {
+  .navbar__tablet-icons {
+    gap: 15px;
+  }
+
+  .navbar {
+    height: 75px;
   }
 }

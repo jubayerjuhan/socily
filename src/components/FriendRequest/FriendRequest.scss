@@ -1,0 +1,30 @@
+.friendRequest-light {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.friendRequest-dark {
+  @extend .friendRequest-light;
+  background-color: var(--dark-500);
+}
+
+.friend__req-header {
+  font-size: 12px;
+  font-weight: 600;
+  color: #808191;
+}
+
+.friend__req-list {
+  margin-top: 20px;
+}
+
+.friend__req-card {
+  gap: 10px;
+  align-items: center;
+
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+}

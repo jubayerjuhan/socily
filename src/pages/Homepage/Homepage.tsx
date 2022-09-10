@@ -1,10 +1,27 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import { useSelector } from "react-redux";
+import CreatePost from "../../components/CreatePost/CreatePost";
+import FriendRequest from "../../components/FriendRequest/FriendRequest";
+import PageComponent from "../../components/PageComponent/PageComponent";
+import { State } from "../../typings/redux-typings/redux-typings";
+import "./Homepage.scss";
 
 const Homepage = () => {
+  return <PageComponent component={<HomePageComponent />} />;
+};
+
+const HomePageComponent = () => {
+  const { theme } = useSelector((state: State) => state.theme);
   return (
-    <div>
-      <Navbar />
+    <div className={`homepage homepage-${theme}`}>
+      <div className="homepage__main">
+        <CreatePost />
+      </div>
+      <div
+        className={` homepage__right-sidebar-${theme} homepage__right-sidebar`}
+      >
+        <FriendRequest />
+      </div>
     </div>
   );
 };
