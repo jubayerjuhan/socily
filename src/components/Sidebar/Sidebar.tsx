@@ -42,11 +42,11 @@ const account = [
   },
 ];
 
-const Sidebar = ({ className, active, setSidebar }: any) => {
+const Sidebar = ({ className, closeAble, active, setSidebar }: any) => {
   const { theme } = useSelector((state: State) => state.theme);
   return (
     <div className={`sidebar sidebar-${theme} ${className}`}>
-      {active && (
+      {closeAble && (
         <div className="close__sidebar">
           <FaTimes onClick={() => setSidebar(!active)} />
         </div>

@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import CreatePost from "../../components/CreatePost/CreatePost";
 import FriendRequest from "../../components/FriendRequest/FriendRequest";
 import PageComponent from "../../components/PageComponent/PageComponent";
+import PostsHomepage from "../../components/PostsHomepage/PostsHomepage";
 import { State } from "../../typings/redux-typings/redux-typings";
 import "./Homepage.scss";
 
@@ -16,6 +17,7 @@ const HomePageComponent = () => {
     <div className={`homepage homepage-${theme}`}>
       <div className="homepage__main">
         <CreatePost />
+        <PostsHomepage />
       </div>
       <div
         className={` homepage__right-sidebar-${theme} homepage__right-sidebar`}

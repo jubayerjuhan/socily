@@ -9,7 +9,12 @@
 }
 
 .homepage__main {
-  padding: 10px 40px;
+  padding: 10px 100px;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .homepage__right-sidebar-light {

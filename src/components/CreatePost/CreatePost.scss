@@ -78,6 +78,23 @@
 
 .selectMedia__lebel {
   margin-top: 10px;
-  p {
+  width: 20%;
+  input {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    svg {
+      color: #10d876;
+      font-size: 26px;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-gray);
+    }
   }
 }
