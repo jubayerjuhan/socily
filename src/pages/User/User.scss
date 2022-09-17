@@ -1,0 +1,64 @@
+.userPage {
+  padding: 10px;
+  .coverWrapper {
+    height: 250px;
+  }
+  .coverImage {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .avatar {
+    height: 100px;
+    width: 100px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .card-body {
+    padding: 0px !important;
+  }
+
+  .userTabs {
+    margin-top: 10px;
+  }
+
+  .createPost-wrapper-main {
+    margin-bottom: 20px;
+  }
+}
+
+.userPage-dark {
+  background-color: var(--dark-700);
+
+  .coverSection {
+    background-color: var(--dark-500) !important;
+  }
+
+  .font {
+    color: white;
+  }
+
+  .nav-tabs li a.active {
+    color: white !important;
+  }
+}
+
+// main section
+.user-main {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 4fr;
+}
+
+@media (max-width: 600px) {
+  .user-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

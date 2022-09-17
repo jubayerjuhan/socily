@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import { State } from "../../typings/redux-typings/redux-typings";
 import "./PostCard.scss";
 import { HiOutlineHeart, HiHeart } from "react-icons/hi";
+import { BiComment } from "react-icons/bi";
+import { FaRegComment } from "react-icons/fa";
 
 const PostCard = () => {
   const { theme } = useSelector((state: State) => state.theme);
@@ -41,6 +43,12 @@ const PostCard = () => {
             className={`${liked ? "active" : "disable"}`}
             onClick={() => setLiked(!liked)}
           />
+
+          <p className="action__count">203 Likes</p>
+        </div>
+        <div className={`likeButton likeButton-${liked}`}>
+          <FaRegComment size={25} />
+          <p className="action__count">203 Comments</p>
         </div>
       </div>
     </div>

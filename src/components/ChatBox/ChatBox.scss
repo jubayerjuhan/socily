@@ -1,0 +1,21 @@
+.chatbox {
+  background-color: wheat;
+  background-color: white;
+}
+
+.chatbox__header {
+  padding: 10px;
+  height: 90px;
+  background-color: var(---light-gray);
+}
+
+.all__chat-message {
+  padding: 10px;
+  height: calc(100vh - 160px);
+  overflow: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+}

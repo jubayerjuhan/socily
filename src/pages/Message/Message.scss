@@ -1,0 +1,22 @@
+.messages {
+  height: 100vh;
+}
+
+.message-main {
+  background-color: var(---light-gray);
+  padding: 0px 10px;
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+
+  .users {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

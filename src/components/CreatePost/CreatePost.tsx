@@ -26,7 +26,10 @@ const CreatePost = () => {
         <p className="createPost__header-text">Create Post</p>
       </div>
       <div className={`createPost__field createPost__field-${theme} `}>
-        <img src="https://picsum.photos/400" alt="" />
+        <img
+          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+          alt=""
+        />
         <textarea
           onChange={(e) => setPost({ ...post, caption: e.target.value })}
           name=""

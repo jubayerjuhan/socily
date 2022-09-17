@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import CreatePost from "../../components/CreatePost/CreatePost";
 import FriendRequest from "../../components/FriendRequest/FriendRequest";
+import MobileBottomNav from "../../components/MobileBottomNav/MobileBottomNav";
 import PageComponent from "../../components/PageComponent/PageComponent";
 import PostsHomepage from "../../components/PostsHomepage/PostsHomepage";
 import { State } from "../../typings/redux-typings/redux-typings";
@@ -11,7 +12,7 @@ const Homepage = () => {
   return <PageComponent component={<HomePageComponent />} />;
 };
 
-const HomePageComponent = () => {
+export const HomePageComponent = () => {
   const { theme } = useSelector((state: State) => state.theme);
   return (
     <div className={`homepage homepage-${theme}`}>
@@ -24,6 +25,7 @@ const HomePageComponent = () => {
       >
         <FriendRequest />
       </div>
+      <MobileBottomNav />
     </div>
   );
 };

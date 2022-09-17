@@ -18,7 +18,6 @@ import {
 import { useSelector } from "react-redux";
 import { State } from "../../typings/redux-typings/redux-typings";
 import { useDispatch } from "react-redux";
-import MobileBottomNav from "../MobileBottomNav/MobileBottomNav";
 import Sidebar from "../Sidebar/Sidebar";
 import { useState } from "react";
 
@@ -72,7 +71,6 @@ const Navbar = () => {
             size={26}
           />
         </div>
-        <MobileBottomNav />
         <Sidebar
           closeAble={true}
           className={sidebar ? `sidebarMobile-active` : "sidebarMobile"}

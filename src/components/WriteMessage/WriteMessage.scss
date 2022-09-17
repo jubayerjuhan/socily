@@ -1,0 +1,23 @@
+.writeMessage {
+  display: grid;
+  align-items: center;
+  height: 70px;
+  padding: 0px 20px;
+  grid-template-columns: 9fr 1fr;
+  gap: 00px;
+  input {
+    padding: 0px 10px;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    background-color: var(---light-gray);
+  }
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  svg {
+    font-size: 30px;
+    color: var(--theme-color);
+  }
+}

@@ -1,0 +1,39 @@
+.aboutSection {
+  padding: 10px 5px;
+  height: fit-content;
+
+  .title {
+    padding-top: 10px;
+  }
+
+  .font {
+    color: var(--text-gray) !important;
+  }
+
+  .location {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.aboutSection-dark {
+  background-color: var(--dark-500);
+
+  .title {
+    color: white !important;
+  }
+
+  .location {
+    color: white !important;
+
+    h4 {
+      color: white !important;
+    }
+  }
+}
+
+.aboutSection {
+  padding: 15px;
+}

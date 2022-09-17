@@ -3,7 +3,10 @@ import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import "./PageComponent.scss";
 
-const PageComponent = ({ component }: any) => {
+interface pageProps {
+  component: any;
+}
+const PageComponent = ({ component }: pageProps) => {
   return (
     <div className="pageComponent">
       <Navbar />

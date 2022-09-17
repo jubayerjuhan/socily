@@ -57,14 +57,13 @@
 }
 
 .likeButton {
-  height: 50px;
   display: flex;
-  align-items: flex-end;
+  gap: 5px;
+  align-items: center;
   overflow: hidden;
-  width: 50px;
   position: relative;
   svg {
-    font-size: 30px;
+    font-size: 30px !important;
     color: white;
   }
 
@@ -81,6 +80,24 @@
     // -webkit-animation: slide-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     //   both;
     // animation: slide-bottom 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}
+
+.postCard__action {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  align-items: center;
+  color: var(--text-gray);
+
+  .likeButton {
+    cursor: pointer;
+  }
+
+  .action__count {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
   }
 }
 
@@ -122,5 +139,11 @@
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .postCard {
+    padding: 15px;
   }
 }
