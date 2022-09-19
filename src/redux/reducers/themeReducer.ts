@@ -1,13 +1,13 @@
-export interface ActionTypings {
-  type: string;
+interface Themeaction {
   payload: object;
+  type: string;
 }
 
 export const themeReducer = (
   state = {
     theme: "dark",
   },
-  action: ActionTypings
+  action: Themeaction
 ): any => {
   switch (action.type) {
     case "SET_THEME":

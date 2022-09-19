@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { State } from "../../typings/redux-typings/redux-typings";
 import "./PostCard.scss";
 import { HiOutlineHeart, HiHeart } from "react-icons/hi";
-import { BiComment } from "react-icons/bi";
+// import { BiComment } from "react-icons/bi";
 import { FaRegComment } from "react-icons/fa";
 
 const PostCard = () => {

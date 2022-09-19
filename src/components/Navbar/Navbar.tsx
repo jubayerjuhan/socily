@@ -26,7 +26,7 @@ const Navbar = () => {
   const { theme } = useSelector((state: State) => state.theme);
   const dispatch = useDispatch();
   const navlinks = [
-    { name: "Home", link: "/home", icon: <FiHome /> },
+    { name: "Home", link: "/", icon: <FiHome /> },
     { name: "Peoples", link: "/peoples", icon: <BsPeople /> },
     { name: "Videos", link: "/videos", icon: <BsCameraVideo /> },
     { name: "Shop", link: "/BsShop", icon: <BsShop /> },

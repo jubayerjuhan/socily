@@ -42,11 +42,10 @@ const UserPageCoverSection = () => {
           </a>
           <a
             href="/home"
-            id="dropdownMenu4"
             className="d-none d-lg-block bg-greylight btn-round-lg ms-2 rounded-3 text-grey-700"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
+            // data-toggle="dropdown"
+            // aria-haspopup="true"
+            // aria-expanded="false"
           >
             <i className="ti-more font-md tetx-dark"></i>
           </a>

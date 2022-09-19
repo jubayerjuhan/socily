@@ -1,5 +1,4 @@
 import React from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import "./WriteMessage.scss";
 
