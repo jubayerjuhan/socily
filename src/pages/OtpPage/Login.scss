@@ -1,0 +1,17 @@
+.loginImageBackground {
+  background-image: url("../../assets/image/login-bg.jpg");
+}
+
+.nav-top {
+  justify-content: flex-start !important;
+}
+
+.resendOtp {
+  color: var(--theme-color) !important;
+  cursor: pointer;
+}
+
+.resendOtpWrapper {
+  display: flex;
+  gap: 10px;
+}

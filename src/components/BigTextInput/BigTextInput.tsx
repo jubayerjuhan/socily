@@ -1,5 +1,6 @@
 import React from "react";
 import "./BigTextInput.scss";
+import { useFormContext } from "react-hook-form";
 
 const BigTextInput = ({ icon, ...otherProps }: any) => {
   return (

@@ -1,12 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdEmail, MdPassword } from "react-icons/md";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import BigTextInput from "../../components/BigTextInput/BigTextInput";
-import LoginActionButton from "../../components/LoginActionButton/LoginActionButton";
+import AlertPrompt from "../../components/Snackbar/Snackbar";
+import { loginUser } from "../../redux/api-actions/usersApi";
+import { State } from "../../typings/redux-typings/redux-typings";
+// import LoginActionButton from "../../components/LoginActionButton/LoginActionButton";
 import "./Login.scss";
 
+export interface LoginCredentials {
+  email: string;
+  password: string;
+}
+
 const Login = () => {
+  const navigate = useNavigate();
+  const { error } = useSelector((state: State) => state.user);
+  const dispatch: any = useDispatch();
+  const [creds, setCreds] = useState({
+    email: "",
+    password: "",
+  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCreds({ ...creds, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async () => {
+    const loggedIn = await dispatch(loginUser(creds));
+    if (loggedIn) navigate("/");
+  };
+
   return (
     <div className="main-wrap">
+      {error && <AlertPrompt title={error} type="error" />}
       <div className="nav-header bg-transparent shadow-none border-0">
         <div className="nav-top w-100">
           <a href="/">
@@ -41,11 +69,15 @@ const Login = () => {
               </h2>
               <form>
                 <BigTextInput
+                  onChange={handleChange}
+                  name="email"
                   icon={<MdEmail />}
                   placeholder="Enter Email Address"
                 />
                 <BigTextInput
+                  onChange={handleChange}
                   type="password"
+                  name="password"
                   icon={<MdPassword />}
                   placeholder="Enter Password"
                 />
@@ -68,12 +100,12 @@ const Login = () => {
               </form>
               <div className="col-sm-12 p-0 text-left">
                 <div className="form-group mb-1">
-                  <a
-                    href="/login"
+                  <p
+                    onClick={handleSubmit}
                     className="form-control text-center style2-input text-white fw-600 bg-dark border-0 p-0 "
                   >
                     Login
-                  </a>
+                  </p>
                 </div>
                 <h6 className="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32">
                   Dont have account{" "}
