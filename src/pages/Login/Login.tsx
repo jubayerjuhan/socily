@@ -4,12 +4,9 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import BigTextInput from "../../components/BigTextInput/BigTextInput";
-<<<<<<< HEAD
 import AlertPrompt from "../../components/Snackbar/Snackbar";
 import { loginUser } from "../../redux/api-actions/usersApi";
 import { State } from "../../typings/redux-typings/redux-typings";
-=======
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
 // import LoginActionButton from "../../components/LoginActionButton/LoginActionButton";
 import "./Login.scss";
 

@@ -1,12 +1,9 @@
 export const LOGIN_PENDING = "LOGIN_PENDING";
 export const LOGIN_COMPLETE = "LOGIN_COMPLETE";
 export const LOGIN_ERROR = "LOGIN_ERROR";
-<<<<<<< HEAD
 export const OTP_PENDING = "OTP_PENDING";
 export const OTP_VERIFIED = "OTP_VERIFIED";
 export const OTP_ERROR = "OTP_ERROR";
-=======
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
 export const CLEAR_ERROR = "CLEAR_ERROR";
 export const SIGN_UP_PENDING = "SIGN_UP_PENDING";
 export const SIGN_UP_COMPLETE = "SIGN_UP_COMPLETE";

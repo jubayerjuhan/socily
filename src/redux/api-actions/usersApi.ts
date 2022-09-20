@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Dispatch } from "redux";
 import { LoginCredentials } from "../../pages/Login/Login";
 import { RegisterCredentials } from "../../pages/Register/Register";
@@ -8,14 +7,6 @@ import {
   LOGIN_COMPLETE,
   LOGIN_ERROR,
   LOGIN_PENDING,
-=======
-import { AxiosError } from "axios";
-import { Navigate } from "react-router-dom";
-import { Dispatch } from "redux";
-import { RegisterCredentials } from "../../pages/Register/Register";
-import { client } from "../../utils/networkRequest";
-import {
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
   SET_JWTTOKEN,
   SIGN_UP_COMPLETE,
   SIGN_UP_ERROR,
@@ -32,11 +23,8 @@ export const registerUser =
       const { data } = await client.post("/register", cred);
       dispatch({ type: SIGN_UP_COMPLETE, payload: data.user });
       dispatch({ type: SET_JWTTOKEN, payload: data.jwtToken });
-<<<<<<< HEAD
       console.log(data.jwtToken, "data.jwt usersapi.ts");
       storeAtLocalstorage("jwtToken", data.jwtToken);
-=======
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
       return true;
     } catch (error: any) {
       dispatch({
@@ -49,7 +37,6 @@ export const registerUser =
       return false;
     }
   };
-<<<<<<< HEAD
 export const loginUser =
   (cred: LoginCredentials) => async (dispatch: Dispatch<UserAction>) => {
     try {
@@ -71,5 +58,3 @@ export const loginUser =
       return false;
     }
   };
-=======
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7

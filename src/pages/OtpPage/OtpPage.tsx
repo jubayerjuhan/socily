@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import { MdPassword } from "react-icons/md";
 import { useDispatch } from "react-redux";
@@ -8,16 +7,10 @@ import { requestNewOtp, verifyOtp } from "../../api-calls/otp_api_calls";
 import BigTextInput from "../../components/BigTextInput/BigTextInput";
 import AlertPrompt from "../../components/Snackbar/Snackbar";
 import { State } from "../../typings/redux-typings/redux-typings";
-=======
-import React from "react";
-import { MdPassword } from "react-icons/md";
-import BigTextInput from "../../components/BigTextInput/BigTextInput";
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
 // import LoginActionButton from "../../components/LoginActionButton/LoginActionButton";
 import "./Login.scss";
 
 const OtpPage = () => {
-<<<<<<< HEAD
   const dispatch: any = useDispatch();
   const { otpError, otpSuccess } = useSelector((state: State) => state.user);
   const [otpStatus, setOtpStatus] = useState(false);
@@ -43,11 +36,6 @@ const OtpPage = () => {
       {otpStatus && <AlertPrompt title={"Otp Sent"} type={"success"} />}
       {otpError && <AlertPrompt title={otpError} type={"error"} />}
 
-=======
-  const resendOtp = () => {};
-  return (
-    <div className="main-wrap">
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
       <div className="nav-header bg-transparent shadow-none border-0">
         <div className="nav-top w-100">
           <a href="/">
@@ -74,17 +62,13 @@ const OtpPage = () => {
                   name="otp"
                   icon={<MdPassword />}
                   placeholder="Enter OTP"
-<<<<<<< HEAD
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                     setOtp(e.target.value)
                   }
-=======
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
                 />
               </form>
               <div className="col-sm-12 p-0 text-left">
                 <div className="form-group mb-1">
-<<<<<<< HEAD
                   <p
                     onClick={handleSubmitOtp}
                     style={{ cursor: "pointer" }}
@@ -92,14 +76,6 @@ const OtpPage = () => {
                   >
                     Submit OTP
                   </p>
-=======
-                  <a
-                    href="/login"
-                    className="form-control text-center style2-input text-white fw-600 bg-dark border-0 p-0 "
-                  >
-                    Submit OTP
-                  </a>
->>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
                 </div>
                 <h6 className="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32 resendOtpWrapper">
                   Didn't Recived OTP?{" "}
