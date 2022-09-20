@@ -70,7 +70,11 @@ const Register = () => {
             <div className="card shadow-none border-0 ms-auto me-auto login-card">
               <div className="card-body rounded-0 text-left">
                 <h2 className="fw-700 display1-size display2-md-size mb-3">
+<<<<<<< HEAD
                   Register <br />
+=======
+                  Login into <br />
+>>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
                   your account
                 </h2>
                 <form autoComplete="on">

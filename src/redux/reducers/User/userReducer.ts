@@ -4,9 +4,12 @@ import {
   LOGIN_COMPLETE,
   LOGIN_ERROR,
   LOGIN_PENDING,
+<<<<<<< HEAD
   OTP_ERROR,
   OTP_PENDING,
   OTP_VERIFIED,
+=======
+>>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
   SET_JWTTOKEN,
   SIGN_UP_COMPLETE,
   SIGN_UP_ERROR,
@@ -35,6 +38,7 @@ export const userReducer = (state = {}, action: UserAction): any => {
         user: null,
         error: action.payload,
       };
+<<<<<<< HEAD
 
     // login
     case LOGIN_PENDING:
@@ -56,6 +60,8 @@ export const userReducer = (state = {}, action: UserAction): any => {
         user: null,
         error: action.payload,
       };
+=======
+>>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
     case CLEAR_ERROR:
       return {
         ...state,
@@ -67,6 +73,7 @@ export const userReducer = (state = {}, action: UserAction): any => {
         jwtToken: action.payload,
       };
 
+<<<<<<< HEAD
     //     // send otp
 
     case OTP_PENDING:
@@ -87,6 +94,8 @@ export const userReducer = (state = {}, action: UserAction): any => {
         otpError: action.payload,
       };
 
+=======
+>>>>>>> 1148e39152abdd89b9b3dee19d92480d056df1f7
     default:
       return state;
   }
